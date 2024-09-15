@@ -1,0 +1,10 @@
+.vscode
+.octopod
+data/*
+!data/README.md
+.idea/
+conan/.env
+__pycache__/
+experiments/.env
+.env
+.DS_Store
