@@ -11,27 +11,14 @@ export const SuccessResponse = (
   return { success: true, data: data, message: message };
 };
 
-export type CompanyQuery = {
-  query: string;
-};
-
 export type URLs = {
   urls: string[];
 };
 
-export type CompanyProfile = {
-  company_name: string;
-  founders: string[];
-  description: string;
-  company_website: string;
+export type PropertyProfile = {
+  property_type: string;
+  price: string;
   location: string;
-  ai_domain: string;
-  linkedin_profile: string;
-  stealth_mode: string;
-  funding_status: string;
-  key_technologies: string[];
-  notable_clients: string[] | null;
-  founding_year: string;
-  employee_count: string;
-  recent_developments: string;
+  size: string;
+  source_url: string;
 };

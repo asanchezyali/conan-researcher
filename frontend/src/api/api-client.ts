@@ -1,5 +1,5 @@
 import { ErrorResponse, SuccessResponse } from '@/lib/types';
-import { CompanyQuery, URLs } from '@/lib/types';
+import { URLs } from '@/lib/types';
 import { Scraper, ScraperFormSchemaInputType } from '@/lib/schemas';
 
 import axiosInstance from './axios-instance';
