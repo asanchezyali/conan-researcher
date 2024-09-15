@@ -1,0 +1,42 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+ray = {extras = ["serve"], version = "*"}
+loguru = "*"
+asyncpg = "*"
+sqlmodel = "*"
+alembic = "*"
+pytz = "*"
+black = "*"
+flake8 = "*"
+pydantic = "*"
+pydantic-settings = "*"
+langchain = "*"
+feedparser = "*"
+chromadb = "*"
+sentence-transformers = "*"
+fastapi = "*"
+arxiv = "*"
+pymupdf = "*"
+llama-index-readers-smart-pdf-loader = "*"
+llmsherpa = "*"
+llama-index-readers-wikipedia = "*"
+wikipedia = "1.4.0"
+llama-index-readers-youtube-transcript = "*"
+llama-index-readers-web = "*"
+unstructured = "*"
+llama-index-readers-snscrape-twitter = "*"
+llama-index = "*"
+tweepy = "*"
+google-api-python-client = "*"
+google-auth-httplib2 = "*"
+google-auth-oauthlib = "*"
+langchain-google-community = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

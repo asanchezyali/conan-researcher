@@ -1,0 +1,22 @@
+# Web serving
+ray[serve]
+loguru
+
+# Database integration
+sqlalchemy
+psycopg2-binary
+
+# Utils
+ipython
+httpie
+pytz
+black==22.10.0
+flake8==5.0.4
+
+# Scrapping
+feedparser
+
+# RAG
+sentence-transformers
+langchain
+chromadb
