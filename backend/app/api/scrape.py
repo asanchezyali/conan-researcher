@@ -5,9 +5,8 @@ from fastapi.responses import Response
 
 from app.core.db import get_session
 from app.crud.scrapers import save_scraper_results, update_scraper_status
-from app.models.schemas import ScrapeMode
 from app.models.models import ScraperRun, ScraperStatus
-from app.services.scrape import ScrapeCompanyService
+from app.services.scrape import ScrapeService
 from app.utils.shared_pools import run_blocking_code_in_thread
 
 router = APIRouter()
@@ -22,7 +21,7 @@ async def scrape(query: ScraperRun, session=Depends(get_session)):
         await update_scraper_status(
             session=session, scraper_id=query.uuid, status=ScraperStatus.running
         )
-        query_service = ScrapeCompanyService(verbose=True, scrape_mode=ScrapeMode.basic)
+        query_service = ScrapeService(verbose=True)
         response = await run_blocking_code_in_thread(query_service.extract_data, query)
 
         if "error" not in response:
