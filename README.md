@@ -1,4 +1,7 @@
 # Conan Researcher
+![Screenshot 2025-04-01 at 12 52 23 AM](https://github.com/user-attachments/assets/2f11d77a-4d24-4c98-92d1-468272d60fe3)
+
+![Screenshot 2025-04-01 at 12 51 58 AM](https://github.com/user-attachments/assets/35bc5c45-3d47-44d6-b92e-948af919d59d)
 
 A sophisticated data extraction and analysis system with web scraping capabilities, built with FastAPI backend and a modern frontend.
 
