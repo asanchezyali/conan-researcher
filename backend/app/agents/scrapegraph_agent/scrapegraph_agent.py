@@ -30,12 +30,13 @@ class SmartScraperResearchAgent:
         self.prompt = prompt or self._generate_prompt(
             data_schema, user_description=user_description
         )
-
+        print(f"Prompt: {self.prompt}")
         smart_scraper = SmartScraperMultiGraph(
             source=urls, prompt=self.prompt, config=self.config
         )
         results = smart_scraper.run()
-        return results
+        print(f"Results: {results}")
+        return results.get("properties", [])
 
     def _generate_prompt(self, data_schema, user_description, **kwargs):
         logger.info("Generating prompt for the SmartScraperMultiGraph")

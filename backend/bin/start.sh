@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export PYTHONUNBUFFERED=1
+
 set -e
 
 if [ "$ENV" = "dev" ]; then

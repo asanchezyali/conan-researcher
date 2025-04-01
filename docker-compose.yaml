@@ -75,6 +75,13 @@ services:
       - net
     environment:
       - ENV=dev # dev, prod
+      - PYTHONUNBUFFERED=3
+      - LOG_LEVEL=INFO  # Set your desired log level
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     stdin_open: true
     tty: true
     depends_on:
